@@ -15,10 +15,10 @@ spring:
     gateway:
       routes:
         - id: ewm1
-          uri: http://localhost:8081/
+          uri: lb://ewm1
           predicates:
             - Path=/ewm1/**
         - id: ewm2
-          uri: http://localhost:8082/
+          uri: lb://ewm2
           predicates:
             - Path=/ewm2/**
