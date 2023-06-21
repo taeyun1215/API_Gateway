@@ -14,11 +14,11 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: ewm1
-          uri: lb://ewm1
+        - id: user-service
+          uri: lb://user-service
           predicates:
-            - Path=/ewm1/**
-        - id: ewm2
-          uri: lb://ewm2
+            - Path=/user-service/**
+        - id: mate-service
+          uri: lb://mate-service
           predicates:
-            - Path=/ewm2/**
+            - Path=/mate-service/**
