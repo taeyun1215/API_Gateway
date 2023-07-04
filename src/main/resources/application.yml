@@ -19,10 +19,6 @@ spring:
           predicates:
             - Path=/user-service/**
         - id: mate-service
-          uri: lb://mate-service
+          uri: http://15.164.188.74:8080
           predicates:
             - Path=/mate-service/**
-        - id: product-service
-          uri: lb://product-service
-          predicates:
-            - Path=/product-service/**
