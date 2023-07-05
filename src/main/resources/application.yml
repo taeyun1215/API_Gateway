@@ -17,6 +17,6 @@ spring:
         - uri: lb://user-service
           predicates:
             - Path=/user-service/**
-        - uri: 15.164.188.74:8080
+        - uri: http://15.164.188.74:8080
           predicates:
             - Path=/mate-service/**
