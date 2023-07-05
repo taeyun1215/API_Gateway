@@ -14,11 +14,9 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: user-service
-          uri: lb://user-service
+        - uri: lb://user-service
           predicates:
             - Path=/user-service/**
-        - id: mate-service
-          uri: http://15.164.188.74:8080
+        - uri: http://15.164.188.74:8080
           predicates:
             - Path=/mate-service/**
