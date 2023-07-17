@@ -20,3 +20,6 @@ spring:
         - uri: http://15.164.188.74:8080
           predicates:
             - Path=/mate-service/**
+        - uri: lb://product-service
+          predicates:
+            - Path=/product-service/**
