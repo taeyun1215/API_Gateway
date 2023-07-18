@@ -23,3 +23,9 @@ spring:
         - uri: lb://product-service
           predicates:
             - Path=/product-service/**
+        - uri: lb://stock-service
+          predicates:
+            - Path=/stock-service/**
+        - uri: lb://order-service
+          predicates:
+            - Path=/order-service/**
